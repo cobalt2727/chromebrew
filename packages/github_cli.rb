@@ -3,23 +3,23 @@ require 'package'
 class Github_cli < Package
   description 'Official Github CLI tool'
   homepage 'https://cli.github.com/'
-  version '2.4.0'
+  version '2.14.7'
   license 'MIT'
   compatibility 'all'
   source_url 'https://github.com/cli/cli.git'
   git_hashtag "v#{version}"
 
   binary_url({
-    aarch64: 'https://gitlab.com/api/v4/projects/26210301/packages/generic/github_cli/2.4.0_armv7l/github_cli-2.4.0-chromeos-armv7l.tpxz',
-     armv7l: 'https://gitlab.com/api/v4/projects/26210301/packages/generic/github_cli/2.4.0_armv7l/github_cli-2.4.0-chromeos-armv7l.tpxz',
-       i686: 'https://gitlab.com/api/v4/projects/26210301/packages/generic/github_cli/2.4.0_i686/github_cli-2.4.0-chromeos-i686.tpxz',
-     x86_64: 'https://gitlab.com/api/v4/projects/26210301/packages/generic/github_cli/2.4.0_x86_64/github_cli-2.4.0-chromeos-x86_64.tpxz'
+    aarch64: 'https://github.com/cli/cli/releases/download/v2.14.7/gh_2.14.7_linux_armv6.tar.gz',
+     armv7l: 'https://github.com/cli/cli/releases/download/v2.14.7/gh_2.14.7_linux_armv6.tar.gz',
+       i686: 'https://github.com/cli/cli/releases/download/v2.14.7/gh_2.14.7_linux_386.tar.gz',
+     x86_64: 'https://github.com/cli/cli/releases/download/v2.14.7/gh_2.14.7_linux_amd64.tar.gz'
   })
   binary_sha256({
-    aarch64: 'ed4d15c5f5463c3e32154794546d2e5bef9fa0243244b75f4f0830b67fa538e6',
-     armv7l: 'ed4d15c5f5463c3e32154794546d2e5bef9fa0243244b75f4f0830b67fa538e6',
-       i686: '70b4a04ba267fabcc8c2a31ca83e707ab7840797f5b8b83e54023ac1ff657f86',
-     x86_64: 'e9b0e62bcbedde56e3ffc7e2e32fade7af6c3de1848c557c36ee738c3be8275d'
+    aarch64: 'ad1532acbeabf3cd3a24298a5b03b388d6c8be2a2f490ad2eee35a09bd2e68be',
+     armv7l: 'ad1532acbeabf3cd3a24298a5b03b388d6c8be2a2f490ad2eee35a09bd2e68be',
+       i686: 'b516d3239612e14681f31dbcc632704f9975b4b625906f23f1aff956835dd088',
+     x86_64: 'd174d0057b72ad0427d3225225d50d4dffaa61f3c000deeaf96248ae49deb2be'
   })
 
   depends_on 'go' => :build
