@@ -305,6 +305,10 @@ yes | crew install core
 echo_info "\nRunning Bootstrap package postinstall scripts...\n"
 crew postinstall $BOOTSTRAP_PACKAGES
 
+echo_info "\nChecking for crew package updates...\n"
+crew update
+crew upgrade
+
 echo "                       . .
                    ..,:;;;::'..
                  .':lllllllool,.
